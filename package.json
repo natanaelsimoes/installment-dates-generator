@@ -5,6 +5,10 @@
   "main": "PaymentDate.js",
   "author": "Natanael Simoes",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natanaelsimoes/installments-dates-generator"
+  },
   "scripts": {
     "test": "jest"
   },
