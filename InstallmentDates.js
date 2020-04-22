@@ -31,7 +31,6 @@ function validateParams(startDate, dayToPay, installments) {
 function InstallmentDates(startDate, payDay, installments) {
     let lastDay, dates = [];
     validateParams(startDate, payDay, installments);
-    console.log('Start date: ', _startDate);
     if (_startDate.getDate() > _payDay) {
         lastDay = lastDate(_startDate.getMonth() + 1, _startDate.getFullYear());
         _startDate.setDate(_payDay <= lastDay ? _payDay : lastDay);

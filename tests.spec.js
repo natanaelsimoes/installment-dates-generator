@@ -1,6 +1,13 @@
 const PaymentDate = require('./InstallmentDates');
 
 describe("Payment date generator", () => {
+    it("start date as time", (done) => {
+        const dates = PaymentDate(Date.now(), 1, 3);
+        expect(typeof dates).toBe('object');
+        expect(dates.length).toBe(3);
+        done();
+    });
+
     it("day to pay greater than start date day", (done) => {
         const dates = PaymentDate(new Date(2020, 3, 5), 20, 3);
         expect(typeof dates).toBe('object');
