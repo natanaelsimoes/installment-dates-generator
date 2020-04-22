@@ -2,7 +2,7 @@
   "name": "installment-dates-generator",
   "version": "1.0.0",
   "description": "Generates dates to installments based on a start date and the day to pay",
-  "main": "PaymentDate.js",
+  "main": "InstallmentDates.js",
   "author": "Natanael Simoes",
   "license": "MIT",
   "repository": {
