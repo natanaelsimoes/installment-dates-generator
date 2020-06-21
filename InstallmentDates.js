@@ -14,7 +14,7 @@ function validateParams(startDate, dayToPay, installments) {
         _startDate = new Date(startDate);
     else if (typeof startDate === 'object'
         && startDate.constructor.name === 'Date')
-        _startDate = startDate;
+        _startDate = new Date(startDate.getTime());
     else throw 'Start date is not a valid date';
     if (!isInt(dayToPay))
         throw 'Day to pay needs to be an integer';
